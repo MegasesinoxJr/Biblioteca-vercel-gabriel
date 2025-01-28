@@ -1,6 +1,6 @@
 from decouple import config, Csv
 ALLOWED_HOSTS = ['127.0.0.1','.vercel.app']
-DEBUG = True
+DEBUG = False
 DATABASES = {
     'default': {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
@@ -10,3 +10,4 @@ DATABASES = {
         "USER": config("POSTGRES_USER"),
         "PASSWORD": config("POSTGRES_PASSWORD")
     }
+}
